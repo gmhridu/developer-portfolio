@@ -1,7 +1,8 @@
-/* *{
+*{
   margin: 0;
   padding: 0;
-} */
+  box-sizing: border-box;
+}
 /* common shared styles*/
 body{
   font-family: 'Lato', sans-serif;
@@ -28,7 +29,19 @@ text-align: center;
 font-size: 35px;
 font-weight: 700;
 padding-top: 120px;
+padding-bottom: 50px;
 }
+
+.resume-section-title{
+  color: #181818;
+text-align: center;
+font-size: 35px;
+font-weight: 700;
+padding-top: 120px;
+padding-bottom: 100px;
+}
+
+
 
 .section-description{
 color:#757575;
@@ -63,13 +76,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 200px;
+  /* margin: 0 200px; */
 }
 
 .nav-title{
   color: #181818;
 font-size: 45px;
 font-weight: 800;
+margin-top: 51px;
 }
 
 nav > ul {
@@ -92,18 +106,33 @@ nav a{
 /* header related styles */
 .header{
   background: #FFF8F3;
-  background-image: url(../images/header_bg.png);
+  background-image: url('../images/header_bg.png');
   background-repeat: no-repeat;
   background-position: bottom right;
+  display: flex;
+  gap: 70px;
 }
 
+.header-left{
+  padding: 15px 0 15px 15px;
+}
+
+.header-right{
+  width: 100%;
+  position: relative;
+}
+
+/* header-navber */
+
 .banner{
-  padding: 30px 30px 30px 150px;
+  padding: 90px 0 250px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 0;
 }
+
+
 
 .banner-content{
   max-width: 500px;
@@ -115,9 +144,13 @@ color: #757575;
 font-size: 18px;
 font-weight: 400;
 line-height: 30px; 
+margin-bottom: 30px;
 }
 
-.banner .profile-pic{
+.profile-pic{
+  position: absolute; 
+  right: 0;
+  bottom: 0;
   width: 500px;
   padding-left: 5px;
 }
@@ -286,6 +319,7 @@ color:#181818;
 text-align: left;
 font-size: 35px;
 font-weight: 700;
+padding-bottom: 40px;
 }
 
 .contact-us{
@@ -293,6 +327,7 @@ color: #181818;
 text-align: left;
 font-size: 35px;
 font-weight: 700;
+padding-bottom: 40px;
 }
 
 .footer-description{
@@ -300,6 +335,7 @@ color: #474747;
 font-size: 16px;
 font-weight: 400;
 line-height: 28px;
+padding-bottom: 15px;
 }
 
 .footer-column{
